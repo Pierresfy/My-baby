@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Baby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fde6e6; /* Light pink background */
+            text-align: center;
+        }
+        h1 {
+            color: #ff66b2; /* Pink title */
+        }
+        #love-message {
+            color: #ff66b2; /* Pink love message */
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff66b2; /* Pink buttons */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        button:hover {
+            background-color: #ff80cc; /* Lighter pink on hover */
+        }
+        .image-container p {
+            color: #ff66b2; /* Pink captions */
+            font-weight: bold;
+        }
+        #essay-box {
+            width: 60%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #ff66b2; /* Pink border */
+            border-radius: 10px;
+            display: none; /* Initially hidden */
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            resize: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ff66b2; /* Pink border */
+        }
+    </style>
+    <script>
+        function checkIdentity(answer) {
+            if (answer === "yes") {
+                alert("You're Prettiest");
+                alert("Cupian Love You So Much");
+                showPictures();
+            } else if (answer === "no") {
+                alert("Error: You must be Ashratul Maisarah!");
+            }
+        }
+
+        function showPictures() {
+            document.getElementById("question").style.display = "none";
+            document.getElementById("pictures").style.display = "block";
+        }
+
+        function showEssayBox() {
+            document.getElementById("essay-box").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+<h1>My Baby</h1>
+
+<div id="question">
+    <button onclick="checkIdentity('yes')">Yes</button>
+    <button onclick="checkIdentity('no')">No</button>
+</div>
+
+<div id="pictures" style="display:none;">
+    <div id="love-message">
+        <p>I LOVE YOU MORE THAN WORDS</p>
+    </div>
+    <div class="image-container">
+        <img src="Mybabybreath.jpeg" alt="Mybabybreath.jpeg">
+        <p>First flower that i gave you hehe :3 </p>
+    </div>
+    <div class="image-container">
+        <img src="Us.jpeg" alt="Us.jpeg">
+        <p> BABY CUPIAN IN THAT MIRRORS </p>
+    </div>
+    <div class="image-container">
+        <img src="Sicantik.jpeg" alt="Sicantik.jpeg">
+        <p> YOU LOOKS SO UNREAL SAYANG </p>
+    </div>
+    <div class="image-container">
+        <img src="Sayangsaya.jpeg" alt="Sayangsaya.jpeg">
+        <p> YOU LOOKS SO PRETTY MY ANGEL AAA</p>
+    </div>
+    <div class="image-container">
+        <img src="My lovely leftenan.jpeg" alt="My lovely leftenan.jpeg">
+        <p>SIAP UNTUK MENCINTAI AWAK MY LEFTENAN</p>
+    </div>
+    <div class="image-container">
+        <img src="Loveyiu.jpeg" alt="Loveyiu.jpeg">
+        <p>COMEL KITA KAN SAYANG KAN</p>
+    </div>
+    <div id="buttons">
+        <button onclick="document.getElementById('question').style.display = 'block'; document.getElementById('pictures').style.display = 'none';">Back</button>
+        <button onclick="showEssayBox()">Next</button>
+    </div>
+</div>
+
+<div id="essay-box">
+    <textarea placeholder="First thing first , Im really lucky to meeting you in my life. Im luckiest person. Your personality make me melt to know you more more and more sayang . I want you to become my future . Words cant describe how much the pretty you are . Its too much . I love you so much . My baby , My sayang , My manja , My everything. I appreciate everything what you did . My future mummy to my son/daughter hehehe.I LOVE YOU SO MUCH I LOVE YOU SO MUCH LOVE YOU SO MUCH"></textarea>
+</div>
+
+</body>
+</html>
+
